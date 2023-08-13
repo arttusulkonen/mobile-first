@@ -1,1 +1,147 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dosis-Medium";
+  src: url("../fonts/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dosis-Light";
+  src: url("../fonts/Dosis-Light.woff") format("woff"), url("../fonts/Dosis-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #2B4074;
+}
+.header__inner {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__link {
+  margin-left: 8px;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.menu__btn::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: #2B4074;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 0 0 #2B4074, 0 -4px 0 0 #2B4074;
+}
+
+.head {
+  background-image: url("../images/bg-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 193px;
+}
+.head .top-slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+.head .top-slider__item {
+  color: white;
+  text-align: center;
+}
+.head .top-slider__title {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  padding: 36px 0 28px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 40px;
+  }
+  .header__inner {
+    min-height: 100px;
+  }
+  .logo__link {
+    margin-left: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 60px;
+  }
+  .logo__link {
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
